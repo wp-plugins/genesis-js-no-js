@@ -31,7 +31,7 @@ This plugin recreates the same effect, but for the front-end of Genesis child th
 
 Usually, yes, but it's a fairly small script, so doesn't block rendering of other content for any noticeable length of time.
 
-Doing it immediately also reduces a flash of incorrectly styled content, as the page loads with `no-js` styles, and then switches to `js` once everything has finished loading.
+Doing it immediately also reduces a flash of incorrectly styled content, as the page doesn't load with `no-js` styles, then switch to `js` once everything has finished loading.
 
 == Changelog ==
 
