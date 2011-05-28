@@ -10,6 +10,8 @@ Make front-end styling based on whether JS is enabled or not easier for child th
 
 == Description ==
 
+This plugin is only useful if you're using a child theme of the <a href="http://genesis-theme-framework.com/">Genesis Theme</a>.
+
 Adds a `no-js` body class to the front-end, and a script on `genesis_before` which immediately changes the class to `js` if JavaScript is enabled. This is how WP does things on the back-end, to allow different styles for the same elements depending if JavaScript is active or not.
 
 == Installation ==
