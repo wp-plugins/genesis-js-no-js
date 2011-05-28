@@ -2,6 +2,7 @@
 /**
  * Genesis js / no-js WordPress plugin.
  *
+ * For child themes of the Genesis Theme.
  * Adds a no-js body class to the front-end, and a script on genesis_before
  * which immediately changes the class to js if JavaScript is enabled. This is
  * how WP does things on the back-end, to allow different styles for the same
@@ -13,7 +14,7 @@
  *
  * Plugin Name: Genesis js / no-js
  * Plugin URI: http://code.garyjones.co.uk/plugins/genesis-js-no-js/
- * Description: Adds a <code>no-js</code> body class to the front-end, and a script on <code>genesis_before</code> which immediately changes the class to <code>js</code> if JavaScript is enabled. This is how WP does things on the back-end, to allow differing styles for elements if JavaScript is active or not.
+ * Description: For child themes of the <a href="http://genesis-theme-framework.com/">Genesis Theme</a>. Adds a <code>no-js</code> body class to the front-end, and a script on <code>genesis_before</code> which immediately changes the class to <code>js</code> if JavaScript is enabled. This is how WP does things on the back-end, to allow differing styles for elements if JavaScript is active or not.
  * Version: 1.0
  * Author: Gary Jones
  * Author URI: http://garyjones.co.uk/
