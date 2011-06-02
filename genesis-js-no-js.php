@@ -15,7 +15,7 @@
  * Plugin Name: Genesis js / no-js
  * Plugin URI: http://code.garyjones.co.uk/plugins/genesis-js-no-js/
  * Description: For child themes of the <a href="http://genesis-theme-framework.com/">Genesis Theme</a>. Adds a <code>no-js</code> body class to the front-end, and a script on <code>genesis_before</code> which immediately changes the class to <code>js</code> if JavaScript is enabled. This is how WP does things on the back-end, to allow differing styles for elements if JavaScript is active or not.
- * Version: 1.0
+ * Version: 1.0.1
  * Author: Gary Jones
  * Author URI: http://garyjones.co.uk/
  * License: GPL3
@@ -57,7 +57,7 @@ class Genesis_Js_No_Js {
 	 */
 	public function init() {
 		add_filter( 'body_class', array( $this, 'body_class' ) );
-		add_action( 'genesis_before', array( $this, 'script' ) );
+		add_action( 'genesis_before', array( $this, 'script' ), 1 );
 	}
 
 	/**

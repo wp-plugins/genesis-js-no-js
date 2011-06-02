@@ -4,7 +4,7 @@ Donate link: http://code.garyjones.co.uk/donate/
 Tags: genesis, js-no-js
 Requires at least: 3.0
 Tested up to: 3.1.2
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 Make front-end styling based on whether JS is enabled or not easier for child themes on the Genesis theme framework.
 
@@ -37,10 +37,16 @@ Doing it immediately also reduces a flash of incorrectly styled content, as the 
 
 == Changelog ==
 
+= 1.0.1 =
+* Improved plugin so script is hooked in with priority 1 - avoids a theme placing anything before the script (props [Josh Stauffer](http://twitter.com/joshstauffer))
+
 = 1.0 =
 * First public version.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Minor change to avoid potential problems with themes hooking in elements before the script.
 
 = 1.0 =
 Update from nothingness. You will feel better for it.
