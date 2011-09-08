@@ -32,7 +32,7 @@ class Genesis_Js_No_Js {
 	/**
 	 * Holds copy of instance, so other plugins can remove our hooks.
 	 *
-	 * @since 1.0
+	 * @since 1.0.0
 	 * @link http://core.trac.wordpress.org/attachment/ticket/16149/query-standard-format-posts.php
 	 * @link http://twitter.com/#!/markjaquith/status/66862769030438912
 	 *
@@ -43,7 +43,7 @@ class Genesis_Js_No_Js {
 	/**
 	 * Constructor.
 	 *
-	 * @since 1.0
+	 * @since 1.0.0
 	 */
 	public function __construct() {
 		self::$instance = $this;
@@ -53,7 +53,7 @@ class Genesis_Js_No_Js {
 	/**
 	 * Add action and filter.
 	 *
-	 * @since 1.0
+	 * @since 1.0.0
 	 */
 	public function init() {
 		add_filter( 'body_class', array( $this, 'body_class' ) );
@@ -63,7 +63,7 @@ class Genesis_Js_No_Js {
 	/**
 	 * Add 'no-js' class to the body class values.
 	 *
-	 * @since 1.0
+	 * @since 1.0.0
 	 *
 	 * @param array $classes Existing classes
 	 * @return array
@@ -76,7 +76,7 @@ class Genesis_Js_No_Js {
 	/**
 	 * Echo out the script that changes 'no-js' class to 'js'.
 	 *
-	 * @since 1.0
+	 * @since 1.0.0
 	 */
 	public function script() {
 		?>
