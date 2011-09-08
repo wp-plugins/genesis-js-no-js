@@ -6,13 +6,16 @@ Requires at least: 3.0
 Tested up to: 3.3
 Stable tag: 1.0.1
 
-Make front-end styling based on whether JS is enabled or not easier for child themes on the Genesis theme framework.
+Make front-end styling easier for child themes on the Genesis Framework based on whether JavaScript is enabled or not.
 
 == Description ==
 
-This plugin is only useful if you're using a child theme of the <a href="http://genesis-theme-framework.com/">Genesis Theme</a>.
+Make front-end styling easier for child themes on the <a href="http://genesis-theme-framework.com/">Genesis Framework</a> based on whether JavaScript is enabled or not.
 
-Adds a `no-js` body class to the front-end, and a script on `genesis_before` which immediately changes the class to `js` if JavaScript is enabled. This is how WP does things on the back-end, to allow different styles for the same elements depending if JavaScript is active or not.
+Adds a `no-js` body class to the front-end, and a script on `genesis_before` which immediately changes the class to `js` if JavaScript is enabled.
+This is how WP does things on the back-end, to allow different styles for the same elements depending if JavaScript is active or not.
+
+This plugin is only useful if you're using a child theme of the <a href="http://genesis-theme-framework.com/">Genesis Framework</a> since it needs to use the `genesis_before` hook.
 
 == Installation ==
 
@@ -27,13 +30,13 @@ If you look at the source of a WordPress back-end page, you'll see it has a body
 
 WordPress uses this to apply different styles to the same elements, depending on whether JavaScript is present or not.
 
-This plugin recreates the same effect, but for the front-end of Genesis child themes.
+This plugin recreates the same effect, but for the front-end of <a href="http://genesis-theme-framework.com/">Genesis Framework</a> child themes.
 
 = Shouldn't the script be at the end of the page? =
 
-Usually, yes, but it's a fairly small script, so doesn't block rendering of other content for any noticeable length of time.
+Usually, yes, but it's a fairly small script, so does not block rendering of other content for any noticeable length of time.
 
-Doing it immediately also reduces a flash of incorrectly styled content, as the page doesn't load with `no-js` styles, then switch to `js` once everything has finished loading.
+Doing it immediately also reduces a flash of incorrectly styled content, as the page does not load with `no-js` styles, then switch to `js` once everything has finished loading.
 
 == Changelog ==
 
